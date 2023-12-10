@@ -12,6 +12,8 @@ s32 a_tls_snd_srv_ticket(a_tls_t *tls);
 s32 a_tls_snd_srv_finished(a_tls_t *tls);
 s32 a_tls_change_cipher_spec(a_tls_t *tls, u32 flag);
 
+#define TLS_DEBUG
+
 s32 a_tls_enc(a_tls_t *tls, crypto_info_t *info)
 {
     return tls->sess->cipher->enc(tls, info);
@@ -141,15 +143,15 @@ s32 a_tls_get_finished_prf(a_tls_t *tls, u32 self, u8 *out)
 
     /*check finished*/
     a_tls_get_hs_data(tls, &hs, &hs_len);
-#ifdef TLS_DEBUG
-    {
-                int k;
-                printf("finished handshake:%d\n",hs_len);
-                for(k=0;(u32)k<hs_len;k++)
-                    printf("%02x",hs[k]);
-                printf("\n");
-    }
-#endif
+// #ifdef TLS_DEBUG
+//     {
+//                 int k;
+//                 printf("finished handshake:%d\n",hs_len);
+//                 for(k=0;(u32)k<hs_len;k++)
+//                     printf("%02x",hs[k]);
+//                 printf("\n");
+//     }
+// #endif
     if (tls->version == A_TLS_TLS_1_2_VERSION) {
 
         if(A_CRYPTO_NID_SHA384 == tls->sess->md->nid) {
@@ -443,6 +445,7 @@ s32 a_tls_snd_srv_ske_gm(a_tls_t *tls)
 }
 s32 a_tls_snd_srv_ske(a_tls_t *tls)
 {
+    printf("\n-----------------server-key-exchange-----------------\n\n");
     sigalg_pair_t *sig;
     crypto_info_t info;
     a_md_t *md = NULL;
@@ -494,10 +497,15 @@ s32 a_tls_snd_srv_ske(a_tls_t *tls)
 #ifdef TLS_DEBUG
     {
         u32 k;
-        printf("tbs :%d\n",tbs_len);
-        for(k=0;k<tbs_len;k++)
-            printf("%02X", tbs[k]);
+        printf("server pub:\n");
+        for(k=0;k < hs->self_ecdh_pub_len;k++)
+        printf("%02X",hs->self_ecdh_pub[k]);
         printf("\n");
+
+        // printf("tbs :%d\n",tbs_len);
+        // for(k=0;k<tbs_len;k++)
+        //     printf("%02X", tbs[k]);
+        // printf("\n");
     }
 #endif
     memset(&info.async, 0 ,sizeof(info.async));
@@ -514,6 +522,11 @@ s32 a_tls_snd_srv_ske(a_tls_t *tls)
         a_tls_error(tls, "ske sign error");
         return A_TLS_ERR;
     }
+
+    printf("sign:%d\n",len);
+    for(int k=0;k<len;k++)
+        printf("%02X", info.async.out[k]);
+    printf("\n");
 
     s2n(len, p);
     p += len;
@@ -624,6 +637,7 @@ s32 a_tls_snd_srv_hello(a_tls_t *tls)
 /*All protocol start here*/
 s32 a_tls_get_clnt_hello(a_tls_t *tls)
 {
+    printf("\n-----------------client-hello-----------------\n\n");
     msg_t msg;
     s32 ret;
 

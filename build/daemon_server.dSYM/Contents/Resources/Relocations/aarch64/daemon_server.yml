@@ -1,0 +1,247 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lisong/github/atls/build/daemon_server'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _a_tls_dec_cbc, symObjAddr: 0x0, symBinAddr: 0x100000F14, symSize: 0x38 }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _a_md5, symObjAddr: 0x7688, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xE4, offset: 0xE4, size: 0x8, addend: 0x0, symName: _a_sha1, symObjAddr: 0x7690, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0xF9, offset: 0xF9, size: 0x8, addend: 0x0, symName: _a_sha256, symObjAddr: 0x7698, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0x10E, offset: 0x10E, size: 0x8, addend: 0x0, symName: _a_sha384, symObjAddr: 0x76A0, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0x123, offset: 0x123, size: 0x8, addend: 0x0, symName: _a_sha512, symObjAddr: 0x76A8, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0x13F, offset: 0x13F, size: 0x8, addend: 0x0, symName: _a_groups, symObjAddr: 0x2760, symBinAddr: 0x100018000, symSize: 0x0 }
+  - { offsetInCU: 0x1B1, offset: 0x1B1, size: 0x8, addend: 0x0, symName: _a_ciphers, symObjAddr: 0x2B60, symBinAddr: 0x100018400, symSize: 0x0 }
+  - { offsetInCU: 0x3B4, offset: 0x3B4, size: 0x8, addend: 0x0, symName: _a_md, symObjAddr: 0x31C0, symBinAddr: 0x100018A60, symSize: 0x0 }
+  - { offsetInCU: 0x3D5, offset: 0x3D5, size: 0x8, addend: 0x0, symName: __a_tls_dec_cbc, symBinAddr: 0x100197BB0, symSize: 0x0 }
+  - { offsetInCU: 0x3F5, offset: 0x3F5, size: 0x8, addend: 0x0, symName: __a_tls_enc_cbc, symBinAddr: 0x100197BC0, symSize: 0x0 }
+  - { offsetInCU: 0x40A, offset: 0x40A, size: 0x8, addend: 0x0, symName: __a_tls_dec_gcm, symBinAddr: 0x100197BB8, symSize: 0x0 }
+  - { offsetInCU: 0x41F, offset: 0x41F, size: 0x8, addend: 0x0, symName: __a_tls_enc_gcm, symBinAddr: 0x100197BC8, symSize: 0x0 }
+  - { offsetInCU: 0x434, offset: 0x434, size: 0x8, addend: 0x0, symName: __a_tls13_enc_gcm, symBinAddr: 0x100197BA8, symSize: 0x0 }
+  - { offsetInCU: 0x449, offset: 0x449, size: 0x8, addend: 0x0, symName: __a_tls13_dec_gcm, symBinAddr: 0x100197BA0, symSize: 0x0 }
+  - { offsetInCU: 0x45E, offset: 0x45E, size: 0x8, addend: 0x0, symName: __a_crypto_rsa_sign, symBinAddr: 0x100197B80, symSize: 0x0 }
+  - { offsetInCU: 0x473, offset: 0x473, size: 0x8, addend: 0x0, symName: __a_crypto_rsa_dec, symBinAddr: 0x100197B78, symSize: 0x0 }
+  - { offsetInCU: 0x488, offset: 0x488, size: 0x8, addend: 0x0, symName: __a_crypto_ec_sign, symBinAddr: 0x100197B70, symSize: 0x0 }
+  - { offsetInCU: 0x49D, offset: 0x49D, size: 0x8, addend: 0x0, symName: __a_crypto_sm2_sign, symBinAddr: 0x100197B90, symSize: 0x0 }
+  - { offsetInCU: 0x4B2, offset: 0x4B2, size: 0x8, addend: 0x0, symName: __a_crypto_sm2_dec, symBinAddr: 0x100197B88, symSize: 0x0 }
+  - { offsetInCU: 0x4C7, offset: 0x4C7, size: 0x8, addend: 0x0, symName: __a_md_proc, symBinAddr: 0x100197B98, symSize: 0x0 }
+  - { offsetInCU: 0x4FA, offset: 0x4FA, size: 0x8, addend: 0x0, symName: _a_tls_dec_cbc, symObjAddr: 0x0, symBinAddr: 0x100000F14, symSize: 0x38 }
+  - { offsetInCU: 0x530, offset: 0x530, size: 0x8, addend: 0x0, symName: _a_tls_enc_cbc, symObjAddr: 0x38, symBinAddr: 0x100000F4C, symSize: 0x38 }
+  - { offsetInCU: 0x566, offset: 0x566, size: 0x8, addend: 0x0, symName: _a_tls_dec_gcm, symObjAddr: 0x70, symBinAddr: 0x100000F84, symSize: 0x38 }
+  - { offsetInCU: 0x59C, offset: 0x59C, size: 0x8, addend: 0x0, symName: _a_tls_enc_gcm, symObjAddr: 0xA8, symBinAddr: 0x100000FBC, symSize: 0x38 }
+  - { offsetInCU: 0x5D2, offset: 0x5D2, size: 0x8, addend: 0x0, symName: _a_tls13_enc_gcm, symObjAddr: 0xE0, symBinAddr: 0x100000FF4, symSize: 0x38 }
+  - { offsetInCU: 0x608, offset: 0x608, size: 0x8, addend: 0x0, symName: _a_tls13_dec_gcm, symObjAddr: 0x118, symBinAddr: 0x10000102C, symSize: 0x38 }
+  - { offsetInCU: 0x63E, offset: 0x63E, size: 0x8, addend: 0x0, symName: _a_crypto_rsa_sign, symObjAddr: 0x150, symBinAddr: 0x100001064, symSize: 0x38 }
+  - { offsetInCU: 0x674, offset: 0x674, size: 0x8, addend: 0x0, symName: _a_crypto_rsa_dec, symObjAddr: 0x188, symBinAddr: 0x10000109C, symSize: 0x38 }
+  - { offsetInCU: 0x6AA, offset: 0x6AA, size: 0x8, addend: 0x0, symName: _a_crypto_ec_sign, symObjAddr: 0x1C0, symBinAddr: 0x1000010D4, symSize: 0x38 }
+  - { offsetInCU: 0x6E0, offset: 0x6E0, size: 0x8, addend: 0x0, symName: _a_crypto_sm2_sign, symObjAddr: 0x1F8, symBinAddr: 0x10000110C, symSize: 0x38 }
+  - { offsetInCU: 0x716, offset: 0x716, size: 0x8, addend: 0x0, symName: _a_crypto_sm2_dec, symObjAddr: 0x230, symBinAddr: 0x100001144, symSize: 0x38 }
+  - { offsetInCU: 0x74C, offset: 0x74C, size: 0x8, addend: 0x0, symName: _a_md_do_digest, symObjAddr: 0x268, symBinAddr: 0x10000117C, symSize: 0x48 }
+  - { offsetInCU: 0x79E, offset: 0x79E, size: 0x8, addend: 0x0, symName: _a_crypto_get_cipher_by_index, symObjAddr: 0x2B0, symBinAddr: 0x1000011C4, symSize: 0x50 }
+  - { offsetInCU: 0x7C8, offset: 0x7C8, size: 0x8, addend: 0x0, symName: _a_crypto_find_cipher_by_nid, symObjAddr: 0x300, symBinAddr: 0x100001214, symSize: 0x9C }
+  - { offsetInCU: 0x801, offset: 0x801, size: 0x8, addend: 0x0, symName: _a_crypto_find_md, symObjAddr: 0x39C, symBinAddr: 0x1000012B0, symSize: 0x98 }
+  - { offsetInCU: 0x83A, offset: 0x83A, size: 0x8, addend: 0x0, symName: _a_md_do_digest_openssl, symObjAddr: 0x434, symBinAddr: 0x100001348, symSize: 0xE8 }
+  - { offsetInCU: 0x8B0, offset: 0x8B0, size: 0x8, addend: 0x0, symName: _a_crypto_do_ec_mul, symObjAddr: 0x51C, symBinAddr: 0x100001430, symSize: 0x29C }
+  - { offsetInCU: 0x9AD, offset: 0x9AD, size: 0x8, addend: 0x0, symName: _a_crypto_calc_ec_shared, symObjAddr: 0x7B8, symBinAddr: 0x1000016CC, symSize: 0x1CC }
+  - { offsetInCU: 0xA7E, offset: 0xA7E, size: 0x8, addend: 0x0, symName: _a_crypto_calc_ec_shared_pkey, symObjAddr: 0x984, symBinAddr: 0x100001898, symSize: 0xE8 }
+  - { offsetInCU: 0xB12, offset: 0xB12, size: 0x8, addend: 0x0, symName: _a_crypto_gen_pkey, symObjAddr: 0xA6C, symBinAddr: 0x100001980, symSize: 0x1A0 }
+  - { offsetInCU: 0xB88, offset: 0xB88, size: 0x8, addend: 0x0, symName: _a_crypto_gen_ec_pub_pkey, symObjAddr: 0xC0C, symBinAddr: 0x100001B20, symSize: 0x1E8 }
+  - { offsetInCU: 0xBFD, offset: 0xBFD, size: 0x8, addend: 0x0, symName: _a_crypto_gen_ec_pub, symObjAddr: 0xDF4, symBinAddr: 0x100001D08, symSize: 0x3A4 }
+  - { offsetInCU: 0xCDD, offset: 0xCDD, size: 0x8, addend: 0x0, symName: _a_crypto_get_group_by_tls_id, symObjAddr: 0x1198, symBinAddr: 0x1000020AC, symSize: 0x94 }
+  - { offsetInCU: 0xD16, offset: 0xD16, size: 0x8, addend: 0x0, symName: _a_crypto_get_group_by_index, symObjAddr: 0x122C, symBinAddr: 0x100002140, symSize: 0x4C }
+  - { offsetInCU: 0xD40, offset: 0xD40, size: 0x8, addend: 0x0, symName: _a_crypto_get_group_index_by_tls_id, symObjAddr: 0x1278, symBinAddr: 0x10000218C, symSize: 0x84 }
+  - { offsetInCU: 0xD79, offset: 0xD79, size: 0x8, addend: 0x0, symName: _a_crypto_hmac, symObjAddr: 0x12FC, symBinAddr: 0x100002210, symSize: 0x5C }
+  - { offsetInCU: 0xDFD, offset: 0xDFD, size: 0x8, addend: 0x0, symName: _mgf1, symObjAddr: 0x1358, symBinAddr: 0x10000226C, symSize: 0x1A0 }
+  - { offsetInCU: 0xECF, offset: 0xECF, size: 0x8, addend: 0x0, symName: _light_rsa_add_pkcs1_padding, symObjAddr: 0x14F8, symBinAddr: 0x10000240C, symSize: 0x118 }
+  - { offsetInCU: 0xF44, offset: 0xF44, size: 0x8, addend: 0x0, symName: _light_rsa_add_pss_padding, symObjAddr: 0x1610, symBinAddr: 0x100002524, symSize: 0x2E4 }
+  - { offsetInCU: 0x1027, offset: 0x1027, size: 0x8, addend: 0x0, symName: _a_crypto_sm2_sign_openssl, symObjAddr: 0x18F4, symBinAddr: 0x100002808, symSize: 0xD0 }
+  - { offsetInCU: 0x10D8, offset: 0x10D8, size: 0x8, addend: 0x0, symName: _a_crypto_sm2_dec_openssl, symObjAddr: 0x19C4, symBinAddr: 0x1000028D8, symSize: 0xD0 }
+  - { offsetInCU: 0x116B, offset: 0x116B, size: 0x8, addend: 0x0, symName: _a_crypto_ec_sign_openssl, symObjAddr: 0x1A94, symBinAddr: 0x1000029A8, symSize: 0x140 }
+  - { offsetInCU: 0x1230, offset: 0x1230, size: 0x8, addend: 0x0, symName: _a_crypto_rsa_sign_openssl, symObjAddr: 0x1BD4, symBinAddr: 0x100002AE8, symSize: 0x2DC }
+  - { offsetInCU: 0x1350, offset: 0x1350, size: 0x8, addend: 0x0, symName: _a_crypto_rsa_dec_openssl, symObjAddr: 0x1EB0, symBinAddr: 0x100002DC4, symSize: 0x1C0 }
+  - { offsetInCU: 0x1424, offset: 0x1424, size: 0x8, addend: 0x0, symName: _a_tls_init_crypto_env, symObjAddr: 0x2070, symBinAddr: 0x100002F84, symSize: 0x378 }
+  - { offsetInCU: 0x26, offset: 0x15AD, size: 0x8, addend: 0x0, symName: _a_crypto_HKDF_extract, symObjAddr: 0x0, symBinAddr: 0x1000032FC, symSize: 0x130 }
+  - { offsetInCU: 0x4D, offset: 0x15D4, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xEB, offset: 0x1672, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0x100, offset: 0x1687, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0x115, offset: 0x169C, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0x12A, offset: 0x16B1, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0x140, offset: 0x16C7, size: 0x8, addend: 0x0, symName: _a_crypto_HKDF_extract, symObjAddr: 0x0, symBinAddr: 0x1000032FC, symSize: 0x130 }
+  - { offsetInCU: 0x1D9, offset: 0x1760, size: 0x8, addend: 0x0, symName: _a_crypto_HKDF_expand, symObjAddr: 0x130, symBinAddr: 0x10000342C, symSize: 0x254 }
+  - { offsetInCU: 0x2DF, offset: 0x1866, size: 0x8, addend: 0x0, symName: _a_tls_hkdf_expand_label, symObjAddr: 0x384, symBinAddr: 0x100003680, symSize: 0x198 }
+  - { offsetInCU: 0x38A, offset: 0x1911, size: 0x8, addend: 0x0, symName: _a_tls_derive_secret, symObjAddr: 0x51C, symBinAddr: 0x100003818, symSize: 0xB0 }
+  - { offsetInCU: 0x424, offset: 0x19AB, size: 0x8, addend: 0x0, symName: _a_tls13_gen_master_secret, symObjAddr: 0x5CC, symBinAddr: 0x1000038C8, symSize: 0xA0 }
+  - { offsetInCU: 0x472, offset: 0x19F9, size: 0x8, addend: 0x0, symName: _a_tls_gen_handshake_secret, symObjAddr: 0x66C, symBinAddr: 0x100003968, symSize: 0x188 }
+  - { offsetInCU: 0x4DC, offset: 0x1A63, size: 0x8, addend: 0x0, symName: _a_tls_derive_key, symObjAddr: 0x7F4, symBinAddr: 0x100003AF0, symSize: 0x58 }
+  - { offsetInCU: 0x52E, offset: 0x1AB5, size: 0x8, addend: 0x0, symName: _a_tls_derive_iv, symObjAddr: 0x84C, symBinAddr: 0x100003B48, symSize: 0x58 }
+  - { offsetInCU: 0x580, offset: 0x1B07, size: 0x8, addend: 0x0, symName: _a_tls_derive_finished, symObjAddr: 0x8A4, symBinAddr: 0x100003BA0, symSize: 0x58 }
+  - { offsetInCU: 0x5D7, offset: 0x1B5E, size: 0x8, addend: 0x0, symName: _a_tls_gen_traffic_secret, symObjAddr: 0x8FC, symBinAddr: 0x100003BF8, symSize: 0x3F8 }
+  - { offsetInCU: 0x6D9, offset: 0x1C60, size: 0x8, addend: 0x0, symName: _a_tls_derive_key_and_iv, symObjAddr: 0xCF4, symBinAddr: 0x100003FF0, symSize: 0x14C }
+  - { offsetInCU: 0x74E, offset: 0x1CD5, size: 0x8, addend: 0x0, symName: _a_crypto_phash, symObjAddr: 0xE40, symBinAddr: 0x10000413C, symSize: 0x298 }
+  - { offsetInCU: 0x26, offset: 0x2894, size: 0x8, addend: 0x0, symName: _a_tls_enc, symObjAddr: 0x0, symBinAddr: 0x1000043D4, symSize: 0x3C }
+  - { offsetInCU: 0x3F, offset: 0x28AD, size: 0x8, addend: 0x0, symName: _tls_spec, symObjAddr: 0x26A0, symBinAddr: 0x100018BB0, symSize: 0x0 }
+  - { offsetInCU: 0xB74, offset: 0x33E2, size: 0x8, addend: 0x0, symName: _tls_state_proc, symObjAddr: 0x26C8, symBinAddr: 0x100018BD8, symSize: 0x0 }
+  - { offsetInCU: 0xB95, offset: 0x3403, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xBAA, offset: 0x3418, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0xBBF, offset: 0x342D, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0xBD4, offset: 0x3442, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0xBE9, offset: 0x3457, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0xBF9, offset: 0x3467, size: 0x8, addend: 0x0, symName: _a_tls_enc, symObjAddr: 0x0, symBinAddr: 0x1000043D4, symSize: 0x3C }
+  - { offsetInCU: 0xC2F, offset: 0x349D, size: 0x8, addend: 0x0, symName: _a_tls_dec, symObjAddr: 0x3C, symBinAddr: 0x100004410, symSize: 0x3C }
+  - { offsetInCU: 0xC65, offset: 0x34D3, size: 0x8, addend: 0x0, symName: _a_tls_change_cipher_spec, symObjAddr: 0x78, symBinAddr: 0x10000444C, symSize: 0x2A4 }
+  - { offsetInCU: 0xD30, offset: 0x359E, size: 0x8, addend: 0x0, symName: _a_tls_get_clnt_hello, symObjAddr: 0x31C, symBinAddr: 0x1000046F0, symSize: 0x2F8 }
+  - { offsetInCU: 0xDB2, offset: 0x3620, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_hello, symObjAddr: 0x614, symBinAddr: 0x1000049E8, symSize: 0x230 }
+  - { offsetInCU: 0xE26, offset: 0x3694, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_ske, symObjAddr: 0x844, symBinAddr: 0x100004C18, symSize: 0x598 }
+  - { offsetInCU: 0xF69, offset: 0x37D7, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_done, symObjAddr: 0xDDC, symBinAddr: 0x1000051B0, symSize: 0x80 }
+  - { offsetInCU: 0xFA2, offset: 0x3810, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_ccs, symObjAddr: 0xE5C, symBinAddr: 0x100005230, symSize: 0x80 }
+  - { offsetInCU: 0xFD8, offset: 0x3846, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_ticket, symObjAddr: 0xEDC, symBinAddr: 0x1000052B0, symSize: 0x190 }
+  - { offsetInCU: 0x1038, offset: 0x38A6, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_cert, symObjAddr: 0x106C, symBinAddr: 0x100005440, symSize: 0x1AC }
+  - { offsetInCU: 0x109E, offset: 0x390C, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_finished, symObjAddr: 0x1218, symBinAddr: 0x1000055EC, symSize: 0xE4 }
+  - { offsetInCU: 0x10D4, offset: 0x3942, size: 0x8, addend: 0x0, symName: _a_tls_get_clnt_ccs, symObjAddr: 0x12FC, symBinAddr: 0x1000056D0, symSize: 0x194 }
+  - { offsetInCU: 0x1156, offset: 0x39C4, size: 0x8, addend: 0x0, symName: _a_tls_get_clnt_cke, symObjAddr: 0x1490, symBinAddr: 0x100005864, symSize: 0x1B0 }
+  - { offsetInCU: 0x11D8, offset: 0x3A46, size: 0x8, addend: 0x0, symName: _a_tls_get_clnt_finished, symObjAddr: 0x1640, symBinAddr: 0x100005A14, symSize: 0x414 }
+  - { offsetInCU: 0x12BE, offset: 0x3B2C, size: 0x8, addend: 0x0, symName: _a_tls_process_cke, symObjAddr: 0x1A54, symBinAddr: 0x100005E28, symSize: 0x298 }
+  - { offsetInCU: 0x1372, offset: 0x3BE0, size: 0x8, addend: 0x0, symName: _a_tls_get_finished_prf, symObjAddr: 0x1CEC, symBinAddr: 0x1000060C0, symSize: 0x2D0 }
+  - { offsetInCU: 0x1410, offset: 0x3C7E, size: 0x8, addend: 0x0, symName: _a_tls_get_ske_tbs, symObjAddr: 0x1FBC, symBinAddr: 0x100006390, symSize: 0xA0 }
+  - { offsetInCU: 0x1476, offset: 0x3CE4, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_ske_gm, symObjAddr: 0x205C, symBinAddr: 0x100006430, symSize: 0x3FC }
+  - { offsetInCU: 0x158A, offset: 0x3DF8, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_cert_gm, symObjAddr: 0x2458, symBinAddr: 0x10000682C, symSize: 0x248 }
+  - { offsetInCU: 0x26, offset: 0x3EE3, size: 0x8, addend: 0x0, symName: _a_tls13_dec, symObjAddr: 0x0, symBinAddr: 0x100006A74, symSize: 0x3C }
+  - { offsetInCU: 0x3F, offset: 0x3EFC, size: 0x8, addend: 0x0, symName: _tls13_spec, symObjAddr: 0x1A40, symBinAddr: 0x100018C68, symSize: 0x0 }
+  - { offsetInCU: 0xB74, offset: 0x4A31, size: 0x8, addend: 0x0, symName: _tls13_state_proc, symObjAddr: 0x1A68, symBinAddr: 0x100018C90, symSize: 0x0 }
+  - { offsetInCU: 0xB95, offset: 0x4A52, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xBAA, offset: 0x4A67, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0xBBF, offset: 0x4A7C, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0xBD4, offset: 0x4A91, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0xBE9, offset: 0x4AA6, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0xBF9, offset: 0x4AB6, size: 0x8, addend: 0x0, symName: _a_tls13_dec, symObjAddr: 0x0, symBinAddr: 0x100006A74, symSize: 0x3C }
+  - { offsetInCU: 0xC2F, offset: 0x4AEC, size: 0x8, addend: 0x0, symName: _a_tls13_enc, symObjAddr: 0x3C, symBinAddr: 0x100006AB0, symSize: 0x3C }
+  - { offsetInCU: 0xC65, offset: 0x4B22, size: 0x8, addend: 0x0, symName: _a_tls13_change_cipher_spec, symObjAddr: 0x78, symBinAddr: 0x100006AEC, symSize: 0x3C }
+  - { offsetInCU: 0xC9E, offset: 0x4B5B, size: 0x8, addend: 0x0, symName: _a_tls13_snd_srv_hello, symObjAddr: 0xB4, symBinAddr: 0x100006B28, symSize: 0x27C }
+  - { offsetInCU: 0xD2F, offset: 0x4BEC, size: 0x8, addend: 0x0, symName: _a_tls13_snd_srv_ccs, symObjAddr: 0x330, symBinAddr: 0x100006DA4, symSize: 0x68 }
+  - { offsetInCU: 0xD68, offset: 0x4C25, size: 0x8, addend: 0x0, symName: _a_tls_snd_enc_ext, symObjAddr: 0x398, symBinAddr: 0x100006E0C, symSize: 0x170 }
+  - { offsetInCU: 0xDBA, offset: 0x4C77, size: 0x8, addend: 0x0, symName: _a_tls13_snd_srv_cert, symObjAddr: 0x508, symBinAddr: 0x100006F7C, symSize: 0x29C }
+  - { offsetInCU: 0xE4D, offset: 0x4D0A, size: 0x8, addend: 0x0, symName: _a_tls_snd_srv_vfy, symObjAddr: 0x7A4, symBinAddr: 0x100007218, symSize: 0x2CC }
+  - { offsetInCU: 0xF24, offset: 0x4DE1, size: 0x8, addend: 0x0, symName: _a_tls13_snd_srv_finished, symObjAddr: 0xA70, symBinAddr: 0x1000074E4, symSize: 0x178 }
+  - { offsetInCU: 0xF9B, offset: 0x4E58, size: 0x8, addend: 0x0, symName: _a_tls13_get_clnt_ccs, symObjAddr: 0xBE8, symBinAddr: 0x10000765C, symSize: 0xB8 }
+  - { offsetInCU: 0xFE3, offset: 0x4EA0, size: 0x8, addend: 0x0, symName: _a_tls_get_clnt_early_data, symObjAddr: 0xCA0, symBinAddr: 0x100007714, symSize: 0x488 }
+  - { offsetInCU: 0x10B3, offset: 0x4F70, size: 0x8, addend: 0x0, symName: _a_tls13_get_clnt_finished, symObjAddr: 0x1128, symBinAddr: 0x100007B9C, symSize: 0x3C0 }
+  - { offsetInCU: 0x11A5, offset: 0x5062, size: 0x8, addend: 0x0, symName: _a_tls13_snd_srv_ticket, symObjAddr: 0x14E8, symBinAddr: 0x100007F5C, symSize: 0x3A4 }
+  - { offsetInCU: 0x1221, offset: 0x50DE, size: 0x8, addend: 0x0, symName: _a_tls_get_vfy_tbs, symObjAddr: 0x188C, symBinAddr: 0x100008300, symSize: 0xE0 }
+  - { offsetInCU: 0x12A7, offset: 0x5164, size: 0x8, addend: 0x0, symName: _a_tls_get_peer_finish, symObjAddr: 0x196C, symBinAddr: 0x1000083E0, symSize: 0xD0 }
+  - { offsetInCU: 0x26, offset: 0x5263, size: 0x8, addend: 0x0, symName: _a_tls13_dec_gcm_openssl, symObjAddr: 0x0, symBinAddr: 0x1000084B0, symSize: 0x438 }
+  - { offsetInCU: 0x4D, offset: 0x528A, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xEB, offset: 0x5328, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0x100, offset: 0x533D, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0x115, offset: 0x5352, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0x12A, offset: 0x5367, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0x13B, offset: 0x5378, size: 0x8, addend: 0x0, symName: _a_tls13_dec_gcm_openssl, symObjAddr: 0x0, symBinAddr: 0x1000084B0, symSize: 0x438 }
+  - { offsetInCU: 0x20E, offset: 0x544B, size: 0x8, addend: 0x0, symName: _a_tls13_enc_gcm_openssl, symObjAddr: 0x438, symBinAddr: 0x1000088E8, symSize: 0x350 }
+  - { offsetInCU: 0x2E2, offset: 0x551F, size: 0x8, addend: 0x0, symName: _a_tls13_init_cipher, symObjAddr: 0x788, symBinAddr: 0x100008C38, symSize: 0x178 }
+  - { offsetInCU: 0x342, offset: 0x557F, size: 0x8, addend: 0x0, symName: _a_tls_enc_cbc_openssl, symObjAddr: 0x900, symBinAddr: 0x100008DB0, symSize: 0x2F4 }
+  - { offsetInCU: 0x421, offset: 0x565E, size: 0x8, addend: 0x0, symName: _a_tls_dec_cbc_openssl, symObjAddr: 0xBF4, symBinAddr: 0x1000090A4, symSize: 0x37C }
+  - { offsetInCU: 0x504, offset: 0x5741, size: 0x8, addend: 0x0, symName: _a_tls_enc_gcm_openssl, symObjAddr: 0xF70, symBinAddr: 0x100009420, symSize: 0x250 }
+  - { offsetInCU: 0x5B5, offset: 0x57F2, size: 0x8, addend: 0x0, symName: _a_tls_dec_gcm_openssl, symObjAddr: 0x11C0, symBinAddr: 0x100009670, symSize: 0x21C }
+  - { offsetInCU: 0x657, offset: 0x5894, size: 0x8, addend: 0x0, symName: _a_tls_cache_nbio_data, symObjAddr: 0x13DC, symBinAddr: 0x10000988C, symSize: 0x20C }
+  - { offsetInCU: 0x6D9, offset: 0x5916, size: 0x8, addend: 0x0, symName: _a_tls_write, symObjAddr: 0x15E8, symBinAddr: 0x100009A98, symSize: 0x48C }
+  - { offsetInCU: 0x7D3, offset: 0x5A10, size: 0x8, addend: 0x0, symName: _a_tls_read, symObjAddr: 0x1A74, symBinAddr: 0x100009F24, symSize: 0x4D0 }
+  - { offsetInCU: 0x884, offset: 0x5AC1, size: 0x8, addend: 0x0, symName: _a_tls_init_cipher, symObjAddr: 0x1F44, symBinAddr: 0x10000A3F4, symSize: 0x49C }
+  - { offsetInCU: 0x26, offset: 0x66EE, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_renegotiation, symObjAddr: 0x0, symBinAddr: 0x10000A890, symSize: 0x70 }
+  - { offsetInCU: 0x4E, offset: 0x6716, size: 0x8, addend: 0x0, symName: _ext_proc, symObjAddr: 0x2688, symBinAddr: 0x100018D20, symSize: 0x0 }
+  - { offsetInCU: 0xBEE, offset: 0x72B6, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0xC03, offset: 0x72CB, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0xC18, offset: 0x72E0, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0xC2D, offset: 0x72F5, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0xC42, offset: 0x730A, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0xC59, offset: 0x7321, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_renegotiation, symObjAddr: 0x0, symBinAddr: 0x10000A890, symSize: 0x70 }
+  - { offsetInCU: 0xCB9, offset: 0x7381, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_ks, symObjAddr: 0x70, symBinAddr: 0x10000A900, symSize: 0x3E0 }
+  - { offsetInCU: 0xD89, offset: 0x7451, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_session_ticket, symObjAddr: 0x450, symBinAddr: 0x10000ACE0, symSize: 0xBC }
+  - { offsetInCU: 0xDDB, offset: 0x74A3, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_psk, symObjAddr: 0x50C, symBinAddr: 0x10000AD9C, symSize: 0xE0 }
+  - { offsetInCU: 0xE2D, offset: 0x74F5, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_renegotiation, symObjAddr: 0x5EC, symBinAddr: 0x10000AE7C, symSize: 0xC8 }
+  - { offsetInCU: 0xE7F, offset: 0x7547, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_ks, symObjAddr: 0x6B4, symBinAddr: 0x10000AF44, symSize: 0x3D4 }
+  - { offsetInCU: 0xF25, offset: 0x75ED, size: 0x8, addend: 0x0, symName: _a_tls_process_binders, symObjAddr: 0xA88, symBinAddr: 0x10000B318, symSize: 0x3F4 }
+  - { offsetInCU: 0x1077, offset: 0x773F, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_early_data, symObjAddr: 0xE7C, symBinAddr: 0x10000B70C, symSize: 0xC4 }
+  - { offsetInCU: 0x10CE, offset: 0x7796, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_early_data, symObjAddr: 0xF40, symBinAddr: 0x10000B7D0, symSize: 0xF8 }
+  - { offsetInCU: 0x1133, offset: 0x77FB, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_session_ticket, symObjAddr: 0x1038, symBinAddr: 0x10000B8C8, symSize: 0x8C }
+  - { offsetInCU: 0x1199, offset: 0x7861, size: 0x8, addend: 0x0, symName: _a_tls_parse_session_ticket, symObjAddr: 0x10C4, symBinAddr: 0x10000B954, symSize: 0x2C4 }
+  - { offsetInCU: 0x1257, offset: 0x791F, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_psk, symObjAddr: 0x1388, symBinAddr: 0x10000BC18, symSize: 0x26C }
+  - { offsetInCU: 0x1326, offset: 0x79EE, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_support_ver, symObjAddr: 0x15F4, symBinAddr: 0x10000BE84, symSize: 0x1A0 }
+  - { offsetInCU: 0x13B8, offset: 0x7A80, size: 0x8, addend: 0x0, symName: _a_tls_ext_gen_support_ver, symObjAddr: 0x1794, symBinAddr: 0x10000C024, symSize: 0xC8 }
+  - { offsetInCU: 0x140F, offset: 0x7AD7, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_support_gp, symObjAddr: 0x185C, symBinAddr: 0x10000C0EC, symSize: 0x280 }
+  - { offsetInCU: 0x14EB, offset: 0x7BB3, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_sig, symObjAddr: 0x1ADC, symBinAddr: 0x10000C36C, symSize: 0x250 }
+  - { offsetInCU: 0x15C6, offset: 0x7C8E, size: 0x8, addend: 0x0, symName: _a_tls_gen_session_ticket, symObjAddr: 0x1D2C, symBinAddr: 0x10000C5BC, symSize: 0x138 }
+  - { offsetInCU: 0x162C, offset: 0x7CF4, size: 0x8, addend: 0x0, symName: _a_tls_ext_parse_sni, symObjAddr: 0x1E64, symBinAddr: 0x10000C6F4, symSize: 0x300 }
+  - { offsetInCU: 0x16F8, offset: 0x7DC0, size: 0x8, addend: 0x0, symName: _a_tls_parse_extension, symObjAddr: 0x2164, symBinAddr: 0x10000C9F4, symSize: 0x158 }
+  - { offsetInCU: 0x175E, offset: 0x7E26, size: 0x8, addend: 0x0, symName: _a_tls_construct_extension, symObjAddr: 0x22BC, symBinAddr: 0x10000CB4C, symSize: 0x14C }
+  - { offsetInCU: 0x26, offset: 0x7ED2, size: 0x8, addend: 0x0, symName: _a_tls_malloc, symObjAddr: 0x0, symBinAddr: 0x10000CC98, symSize: 0x90 }
+  - { offsetInCU: 0x3F, offset: 0x7EEB, size: 0x8, addend: 0x0, symName: _am_cnt, symObjAddr: 0xE1CC, symBinAddr: 0x100197BD0, symSize: 0x0 }
+  - { offsetInCU: 0x76, offset: 0x7F22, size: 0x8, addend: 0x0, symName: _g_sig_default_single, symObjAddr: 0x5C60, symBinAddr: 0x100197550, symSize: 0x0 }
+  - { offsetInCU: 0x205, offset: 0x80B1, size: 0x8, addend: 0x0, symName: _g_sig_default, symObjAddr: 0x5CB0, symBinAddr: 0x1001975A0, symSize: 0x0 }
+  - { offsetInCU: 0x226, offset: 0x80D2, size: 0x8, addend: 0x0, symName: _g_sigalg_pair, symObjAddr: 0x5D50, symBinAddr: 0x100197640, symSize: 0x0 }
+  - { offsetInCU: 0x23B, offset: 0x80E7, size: 0x8, addend: 0x0, symName: _a_tls_get_message, symObjAddr: 0x150C, symBinAddr: 0x10000E1A4, symSize: 0x9A4 }
+  - { offsetInCU: 0x262, offset: 0x810E, size: 0x8, addend: 0x0, symName: _a_tls_get_message.ccs, symObjAddr: 0x6250, symBinAddr: 0x100197B40, symSize: 0x0 }
+  - { offsetInCU: 0x404, offset: 0x82B0, size: 0x8, addend: 0x0, symName: _a_md5, symBinAddr: 0x100197B48, symSize: 0x0 }
+  - { offsetInCU: 0x494, offset: 0x8340, size: 0x8, addend: 0x0, symName: _a_sha1, symBinAddr: 0x100197B50, symSize: 0x0 }
+  - { offsetInCU: 0x4A9, offset: 0x8355, size: 0x8, addend: 0x0, symName: _a_sha256, symBinAddr: 0x100197B58, symSize: 0x0 }
+  - { offsetInCU: 0x4BE, offset: 0x836A, size: 0x8, addend: 0x0, symName: _a_sha384, symBinAddr: 0x100197B60, symSize: 0x0 }
+  - { offsetInCU: 0x4D3, offset: 0x837F, size: 0x8, addend: 0x0, symName: _a_sha512, symBinAddr: 0x100197B68, symSize: 0x0 }
+  - { offsetInCU: 0x4E8, offset: 0x8394, size: 0x8, addend: 0x0, symName: _a_tls_tmp_record_buf, symBinAddr: 0x1001A7BD0, symSize: 0x0 }
+  - { offsetInCU: 0x4FD, offset: 0x83A9, size: 0x8, addend: 0x0, symName: _a_tls_tmp_msg_buf, symBinAddr: 0x10019FBD0, symSize: 0x0 }
+  - { offsetInCU: 0x512, offset: 0x83BE, size: 0x8, addend: 0x0, symName: _a_tls_tmp_ciphertext_buf, symBinAddr: 0x10019BBD0, symSize: 0x0 }
+  - { offsetInCU: 0x527, offset: 0x83D3, size: 0x8, addend: 0x0, symName: _a_tls_tmp_msg_read_buf, symBinAddr: 0x1001A3BD0, symSize: 0x0 }
+  - { offsetInCU: 0x560, offset: 0x840C, size: 0x8, addend: 0x0, symName: _a_tls_malloc, symObjAddr: 0x0, symBinAddr: 0x10000CC98, symSize: 0x90 }
+  - { offsetInCU: 0x5A8, offset: 0x8454, size: 0x8, addend: 0x0, symName: _a_tls_free, symObjAddr: 0x90, symBinAddr: 0x10000CD28, symSize: 0x68 }
+  - { offsetInCU: 0x5EC, offset: 0x8498, size: 0x8, addend: 0x0, symName: _a_tls_gen_tls_hmac, symObjAddr: 0xF8, symBinAddr: 0x10000CD90, symSize: 0x284 }
+  - { offsetInCU: 0x6F4, offset: 0x85A0, size: 0x8, addend: 0x0, symName: _a_tls_prf, symObjAddr: 0x37C, symBinAddr: 0x10000D014, symSize: 0x204 }
+  - { offsetInCU: 0x7DC, offset: 0x8688, size: 0x8, addend: 0x0, symName: _a_tls_gen_master_secret, symObjAddr: 0x580, symBinAddr: 0x10000D218, symSize: 0x154 }
+  - { offsetInCU: 0x856, offset: 0x8702, size: 0x8, addend: 0x0, symName: _a_tls_get_sigalg_index, symObjAddr: 0x6D4, symBinAddr: 0x10000D36C, symSize: 0x8C }
+  - { offsetInCU: 0x88F, offset: 0x873B, size: 0x8, addend: 0x0, symName: _a_tls_select_sigalg, symObjAddr: 0x760, symBinAddr: 0x10000D3F8, symSize: 0x13C }
+  - { offsetInCU: 0x914, offset: 0x87C0, size: 0x8, addend: 0x0, symName: _a_tls_do_read, symObjAddr: 0x89C, symBinAddr: 0x10000D534, symSize: 0x3C }
+  - { offsetInCU: 0x95C, offset: 0x8808, size: 0x8, addend: 0x0, symName: _a_tls_do_write, symObjAddr: 0x8D8, symBinAddr: 0x10000D570, symSize: 0x144 }
+  - { offsetInCU: 0x9EE, offset: 0x889A, size: 0x8, addend: 0x0, symName: _a_tls_write_internal, symObjAddr: 0xA1C, symBinAddr: 0x10000D6B4, symSize: 0x224 }
+  - { offsetInCU: 0xA8E, offset: 0x893A, size: 0x8, addend: 0x0, symName: _a_tls_buf_new, symObjAddr: 0xC40, symBinAddr: 0x10000D8D8, symSize: 0x90 }
+  - { offsetInCU: 0xAC7, offset: 0x8973, size: 0x8, addend: 0x0, symName: _a_tls_nbio_flush, symObjAddr: 0xCD0, symBinAddr: 0x10000D968, symSize: 0x158 }
+  - { offsetInCU: 0xB3B, offset: 0x89E7, size: 0x8, addend: 0x0, symName: _a_tls_buf_free, symObjAddr: 0xE28, symBinAddr: 0x10000DAC0, symSize: 0x24 }
+  - { offsetInCU: 0xB61, offset: 0x8A0D, size: 0x8, addend: 0x0, symName: _a_tls_get_hs_digest, symObjAddr: 0xE4C, symBinAddr: 0x10000DAE4, symSize: 0x78 }
+  - { offsetInCU: 0xBC7, offset: 0x8A73, size: 0x8, addend: 0x0, symName: _a_tls_get_hs_data, symObjAddr: 0xEC4, symBinAddr: 0x10000DB5C, symSize: 0x44 }
+  - { offsetInCU: 0xC0F, offset: 0x8ABB, size: 0x8, addend: 0x0, symName: _a_tls_free_hs, symObjAddr: 0xF08, symBinAddr: 0x10000DBA0, symSize: 0x164 }
+  - { offsetInCU: 0xC35, offset: 0x8AE1, size: 0x8, addend: 0x0, symName: _a_tls_save_hs, symObjAddr: 0x106C, symBinAddr: 0x10000DD04, symSize: 0x1B8 }
+  - { offsetInCU: 0xCD6, offset: 0x8B82, size: 0x8, addend: 0x0, symName: _a_tls_snd_msg, symObjAddr: 0x1224, symBinAddr: 0x10000DEBC, symSize: 0x2E8 }
+  - { offsetInCU: 0xDA2, offset: 0x8C4E, size: 0x8, addend: 0x0, symName: _a_tls_change_cipher, symObjAddr: 0x1EB0, symBinAddr: 0x10000EB48, symSize: 0x38 }
+  - { offsetInCU: 0xDDB, offset: 0x8C87, size: 0x8, addend: 0x0, symName: _a_tls_init, symObjAddr: 0x1EE8, symBinAddr: 0x10000EB80, symSize: 0xE4 }
+  - { offsetInCU: 0xE05, offset: 0x8CB1, size: 0x8, addend: 0x0, symName: _a_tls_free_tls, symObjAddr: 0x1FCC, symBinAddr: 0x10000EC64, symSize: 0x1D8 }
+  - { offsetInCU: 0xE49, offset: 0x8CF5, size: 0x8, addend: 0x0, symName: _a_tls_handshake, symObjAddr: 0x21A4, symBinAddr: 0x10000EE3C, symSize: 0xB8 }
+  - { offsetInCU: 0xE82, offset: 0x8D2E, size: 0x8, addend: 0x0, symName: _a_tls_buf_expand, symObjAddr: 0x225C, symBinAddr: 0x10000EEF4, symSize: 0x138 }
+  - { offsetInCU: 0xEE8, offset: 0x8D94, size: 0x8, addend: 0x0, symName: _a_tls_sess_new, symObjAddr: 0x2394, symBinAddr: 0x10000F02C, symSize: 0x128 }
+  - { offsetInCU: 0xF3E, offset: 0x8DEA, size: 0x8, addend: 0x0, symName: _a_tls_check_and_set_curve, symObjAddr: 0x24BC, symBinAddr: 0x10000F154, symSize: 0x158 }
+  - { offsetInCU: 0xFC1, offset: 0x8E6D, size: 0x8, addend: 0x0, symName: _a_tls_check_and_set_sig, symObjAddr: 0x2614, symBinAddr: 0x10000F2AC, symSize: 0x270 }
+  - { offsetInCU: 0x1044, offset: 0x8EF0, size: 0x8, addend: 0x0, symName: _a_tls_check_cipher, symObjAddr: 0x2884, symBinAddr: 0x10000F51C, symSize: 0x22C }
+  - { offsetInCU: 0x107D, offset: 0x8F29, size: 0x8, addend: 0x0, symName: _a_tls_process_cke_ecc, symObjAddr: 0x2AB0, symBinAddr: 0x10000F748, symSize: 0x278 }
+  - { offsetInCU: 0x116F, offset: 0x901B, size: 0x8, addend: 0x0, symName: _a_tls_process_cke_rsa, symObjAddr: 0x2D28, symBinAddr: 0x10000F9C0, symSize: 0x244 }
+  - { offsetInCU: 0x1251, offset: 0x90FD, size: 0x8, addend: 0x0, symName: _a_tls_process_cke_ecdh, symObjAddr: 0x2F6C, symBinAddr: 0x10000FC04, symSize: 0x290 }
+  - { offsetInCU: 0x133E, offset: 0x91EA, size: 0x8, addend: 0x0, symName: _a_tls_construct_srv_hello, symObjAddr: 0x31FC, symBinAddr: 0x10000FE94, symSize: 0x170 }
+  - { offsetInCU: 0x1386, offset: 0x9232, size: 0x8, addend: 0x0, symName: _a_tls_cipher_get, symObjAddr: 0x336C, symBinAddr: 0x100010004, symSize: 0x460 }
+  - { offsetInCU: 0x146F, offset: 0x931B, size: 0x8, addend: 0x0, symName: _a_tls_process_clnt_hello, symObjAddr: 0x37CC, symBinAddr: 0x100010464, symSize: 0x584 }
+  - { offsetInCU: 0x1576, offset: 0x9422, size: 0x8, addend: 0x0, symName: _a_tls_check_version, symObjAddr: 0x3D50, symBinAddr: 0x1000109E8, symSize: 0x24C }
+  - { offsetInCU: 0x15E9, offset: 0x9495, size: 0x8, addend: 0x0, symName: _a_tls_set_fd, symObjAddr: 0x3F9C, symBinAddr: 0x100010C34, symSize: 0x20 }
+  - { offsetInCU: 0x161E, offset: 0x94CA, size: 0x8, addend: 0x0, symName: _a_tls_cfg_free, symObjAddr: 0x3FBC, symBinAddr: 0x100010C54, symSize: 0x1FC }
+  - { offsetInCU: 0x1662, offset: 0x950E, size: 0x8, addend: 0x0, symName: _a_tls_cfg_new, symObjAddr: 0x41B8, symBinAddr: 0x100010E50, symSize: 0x98 }
+  - { offsetInCU: 0x168C, offset: 0x9538, size: 0x8, addend: 0x0, symName: _a_tls_cfg_check_cert, symObjAddr: 0x4250, symBinAddr: 0x100010EE8, symSize: 0xD0 }
+  - { offsetInCU: 0x16B2, offset: 0x955E, size: 0x8, addend: 0x0, symName: _a_tls_new, symObjAddr: 0x4320, symBinAddr: 0x100010FB8, symSize: 0xB4 }
+  - { offsetInCU: 0x16EB, offset: 0x9597, size: 0x8, addend: 0x0, symName: _a_tls_free_sess, symObjAddr: 0x43D4, symBinAddr: 0x10001106C, symSize: 0x4C }
+  - { offsetInCU: 0x1711, offset: 0x95BD, size: 0x8, addend: 0x0, symName: _a_tls_gen_tls_cert, symObjAddr: 0x4420, symBinAddr: 0x1000110B8, symSize: 0x448 }
+  - { offsetInCU: 0x1805, offset: 0x96B1, size: 0x8, addend: 0x0, symName: _a_tls_cfg_set_sign_key, symObjAddr: 0x4868, symBinAddr: 0x100011500, symSize: 0xFC }
+  - { offsetInCU: 0x187A, offset: 0x9726, size: 0x8, addend: 0x0, symName: _a_tls_cfg_set_sign_cert, symObjAddr: 0x4964, symBinAddr: 0x1000115FC, symSize: 0x178 }
+  - { offsetInCU: 0x191C, offset: 0x97C8, size: 0x8, addend: 0x0, symName: _a_tls_cfg_set_cert, symObjAddr: 0x4ADC, symBinAddr: 0x100011774, symSize: 0x414 }
+  - { offsetInCU: 0x1A0B, offset: 0x98B7, size: 0x8, addend: 0x0, symName: _a_tls_cfg_set_key, symObjAddr: 0x4EF0, symBinAddr: 0x100011B88, symSize: 0x1AC }
+  - { offsetInCU: 0x1A80, offset: 0x992C, size: 0x8, addend: 0x0, symName: _a_tls_init_env, symObjAddr: 0x509C, symBinAddr: 0x100011D34, symSize: 0x38 }
+  - { offsetInCU: 0x1A96, offset: 0x9942, size: 0x8, addend: 0x0, symName: _a_tls_get_handshake, symObjAddr: 0x50D4, symBinAddr: 0x100011D6C, symSize: 0x64 }
+  - { offsetInCU: 0x1ADE, offset: 0x998A, size: 0x8, addend: 0x0, symName: _a_tls_get_sni, symObjAddr: 0x5138, symBinAddr: 0x100011DD0, symSize: 0x12C }
+  - { offsetInCU: 0x1B26, offset: 0x99D2, size: 0x8, addend: 0x0, symName: _a_tls_get_protocol_name, symObjAddr: 0x5264, symBinAddr: 0x100011EFC, symSize: 0x138 }
+  - { offsetInCU: 0x1B6E, offset: 0x9A1A, size: 0x8, addend: 0x0, symName: _a_tls_get_cipher_name, symObjAddr: 0x539C, symBinAddr: 0x100012034, symSize: 0x8C }
+  - { offsetInCU: 0x1BB6, offset: 0x9A62, size: 0x8, addend: 0x0, symName: _a_tls_get_sign_curve_name, symObjAddr: 0x5428, symBinAddr: 0x1000120C0, symSize: 0xE8 }
+  - { offsetInCU: 0x1C2B, offset: 0x9AD7, size: 0x8, addend: 0x0, symName: _a_tls_get_exchange_curve_name, symObjAddr: 0x5510, symBinAddr: 0x1000121A8, symSize: 0x138 }
+  - { offsetInCU: 0x1C73, offset: 0x9B1F, size: 0x8, addend: 0x0, symName: _a_tls_pop_err, symObjAddr: 0x5648, symBinAddr: 0x1000122E0, symSize: 0xC0 }
+  - { offsetInCU: 0x26, offset: 0xA55F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000123A0, symSize: 0x3F8 }
+  - { offsetInCU: 0x3F, offset: 0xA578, size: 0x8, addend: 0x0, symName: _port, symObjAddr: 0x41C, symBinAddr: 0x100197B42, symSize: 0x0 }
+  - { offsetInCU: 0xFE, offset: 0xA637, size: 0x8, addend: 0x0, symName: _buf, symBinAddr: 0x1001ABBD0, symSize: 0x0 }
+  - { offsetInCU: 0xBC2, offset: 0xB0FB, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000123A0, symSize: 0x3F8 }
+  - { offsetInCU: 0xCA3, offset: 0xB1DC, size: 0x8, addend: 0x0, symName: __OSSwapInt16, symObjAddr: 0x3F8, symBinAddr: 0x100012798, symSize: 0x24 }
+...

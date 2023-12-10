@@ -20,6 +20,8 @@ crypto_proc _a_crypto_sm2_sign;
 crypto_proc _a_crypto_sm2_dec;
 md_proc     _a_md_proc;
 
+#define TLS_DEBUG
+
 s32 a_tls_dec_cbc(void *arg, crypto_info_t *info)
 {
     return _a_tls_dec_cbc(arg, info);
@@ -158,22 +160,22 @@ a_cipher_t a_ciphers[] =
 
     /*ECDHE_ECDSA*/
     {
-        "ECDHE_ECDHE_WITH_AES_256_GCM_SHA384",
+        "ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        0xc02b, NID_aes_128_gcm, 16, 12, 16, A_CRYPTO_NID_SHA256,
+        A_CRYPTO_CIPHER_TLS1_2|A_CRYPTO_CIPHER_ECDHE|A_CRYPTO_CIPHER_GCM,
+        A_CRYPTO_NID_EC,
+        a_tls_process_cke_ecdh, NULL,
+        a_tls_enc_gcm, a_tls_dec_gcm,
+        NULL,NULL,NULL,
+    },
+    
+    {
+        "ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
         0xc02c, NID_aes_256_gcm, 32, 12, 16, A_CRYPTO_NID_SHA384,
         A_CRYPTO_CIPHER_TLS1_2|A_CRYPTO_CIPHER_ECDHE|A_CRYPTO_CIPHER_GCM,
         A_CRYPTO_NID_EC,
         a_tls_process_cke_ecdh, NULL,
         a_tls_enc_gcm,a_tls_dec_gcm,
-        NULL,NULL,NULL,
-    },
-
-    {
-        "ECDHE_ECDHE_WITH_AES_128_GCM_SHA256",
-        0xc02c, NID_aes_128_gcm, 16, 12, 16, A_CRYPTO_NID_SHA256,
-        A_CRYPTO_CIPHER_TLS1_2|A_CRYPTO_CIPHER_ECDHE|A_CRYPTO_CIPHER_GCM,
-        A_CRYPTO_NID_EC,
-        a_tls_process_cke_ecdh, NULL,
-        a_tls_enc_gcm, a_tls_dec_gcm,
         NULL,NULL,NULL,
     },
 
@@ -458,6 +460,13 @@ s32 a_crypto_do_ec_mul(a_group_t *group, u8 *scale, u32 scale_len,u8 *f_point, u
         goto err;
     }
 
+#ifdef TLS_DEBUG
+    printf("client pub:\n");
+    for(int k=0;k<f_point_len;k++)
+    printf("%02X",f_point[k]);
+    printf("\n");
+#endif   
+
     if(!EC_POINT_oct2point(group->group, pub_key, f_point, f_point_len, ctx))
     {
         goto err;
@@ -507,7 +516,7 @@ s32 a_crypto_calc_ec_shared(a_group_t *group, u8 *scale, u32 scale_len, u8 *f_po
 #ifdef TLS_DEBUG
     {
         u32 i;
-        printf("ec scale\n");
+        printf("ec scale:\n");
         for(i=0;i<scale_len;i++)
         {
             printf("%02X", scale[i]);
@@ -523,7 +532,7 @@ s32 a_crypto_calc_ec_shared(a_group_t *group, u8 *scale, u32 scale_len, u8 *f_po
 #ifdef TLS_DEBUG
     {
         u32 i;
-        printf("after ec\n");
+        printf("after ec:\n");
         for(i=0;i<32*2+1;i++)
         {
             printf("%02X", tmp[i]);

@@ -6,6 +6,8 @@ u8 a_tls_tmp_ciphertext_buf[16384];
 u8 a_tls_tmp_msg_read_buf[16384];
 u8 am_cnt[16384] = {0};
 
+#define TLS_DEBUG
+
 /*for TLS 1.2's default sig*/
 sigalg_pair_t g_sig_default_single[] =
 {
@@ -475,9 +477,9 @@ s32 a_tls_write_internal(a_tls_t *tls, u8 *data, s32 data_len)
 {
     s32 ret, written;
 
-#ifdef TLS_DEBUG
-    printf("internal try write:%d\n",data_len);
-#endif
+// #ifdef TLS_DEBUG
+//     printf("internal try write:%d\n",data_len);
+// #endif
     for (;;) {
         ret = a_tls_do_write(tls, data, data_len, &written);
         if (ret == A_TLS_OK) {
@@ -694,9 +696,9 @@ restart:
     }
 
     nread = a_tls_do_read(tls, read_buf, toread);
-#ifdef TLS_DEBUG
-    printf("a_tls_get_message :%d\n", nread);
-#endif
+// #ifdef TLS_DEBUG
+//     printf("a_tls_get_message :%d\n", nread);
+// #endif
     if (nread == 0) {
         /*peer close*/
         return A_TLS_READ_FIN;
@@ -874,14 +876,14 @@ s32 a_tls_handshake(a_tls_t *tls)
 
     s32 ret;
 
-#ifdef TLS_DEBUG
-    printf("a_tls_handshake start state:%d\n",tls->state);
-#endif
+// #ifdef TLS_DEBUG
+//     printf("a_tls_handshake start state:%d\n",tls->state);
+// #endif
     for (;;) {
         ret = tls->state_proc[tls->state](tls);
-#ifdef TLS_DEBUG
-        printf("tls_state_proc ret:%d end state:%d\n",ret, tls->state);
-#endif
+// #ifdef TLS_DEBUG
+//         printf("tls_state_proc ret:%d end state:%d\n",ret, tls->state);
+// #endif
         if (ret != A_TLS_OK) {
             return ret;
         }
@@ -1013,7 +1015,7 @@ s32 a_tls_check_and_set_sig(a_tls_t *tls, a_cipher_t *cipher)
             continue;
         }
 #ifdef TLS_DEBUG
-        printf("------checking sig %s\n",sig->name);
+        printf("checking sig %s\n",sig->name);
 #endif
 
         if (cipher->sign != sig->pkey) {
@@ -1164,6 +1166,7 @@ s32 a_tls_process_cke_rsa(void *arg, u8 *in, u32 in_len)
 
 s32 a_tls_process_cke_ecdh(void *arg, u8 *in, u32 in_len)
 {
+    printf("\n-----------------client-key-exchange-----------------\n\n");
     u32 pms_len;
     u8 *p = in, pms[A_CRYPTO_MAX_EC_PUB_LEN/2];
     a_tls_t *tls = arg;
@@ -1185,7 +1188,7 @@ s32 a_tls_process_cke_ecdh(void *arg, u8 *in, u32 in_len)
 #ifdef TLS_DEBUG
     {
         u32 k;
-        printf("ecdhe pms %d\n",pms_len);
+        printf("ecdhe pms:%d\n",pms_len);
         for(k=0;k<pms_len;k++)
             printf("%02X",pms[k]);
         printf("\n");
@@ -1601,11 +1604,11 @@ void a_tls_free_tls(a_tls_t *tls)
     a_tls_free(tls);
     i = 0;
 
-    for (i = 0; i < sizeof(am_cnt)/sizeof(u32); i++) {
-        if (am_cnt[i]){
-            printf("size:%d cnt:%d\n", i , am_cnt[i]);
-        }
-    }
+    // for (i = 0; i < sizeof(am_cnt)/sizeof(u32); i++) {
+    //     if (am_cnt[i]){
+    //         printf("size:%d cnt:%d\n", i , am_cnt[i]);
+    //     }
+    // }
 }
 
 /*cfg*/

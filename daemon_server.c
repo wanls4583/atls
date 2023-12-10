@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <unistd.h>
-#include <a_crypto.h>
-#include <a_tls.h>
+#include "a_crypto.h"
+#include "a_tls.h"
 
 unsigned char buf[1024];
 unsigned short port = 44444;
@@ -60,43 +60,43 @@ int main(int argc, char **argv)
         exit(-2);
     }
 
-    printf("Setting RSA certificate\n");
-    if (!a_tls_cfg_set_key(cfg, "./cert/rsa.key")) {
-       printf("a_tls_cfg_set_key rsa.key error\n");
-       exit(-2);
-    }
+    // printf("Setting RSA certificate\n");
+    // if (!a_tls_cfg_set_key(cfg, "./cert/rsa.key")) {
+    //    printf("a_tls_cfg_set_key rsa.key error\n");
+    //    exit(-2);
+    // }
 
-    if (!a_tls_cfg_set_cert(cfg, "./cert/rsa.pem")) {
-        printf("a_tls_cfg_set_cert rsa.pem error\n");
-        exit(-2);
-    }
+    // if (!a_tls_cfg_set_cert(cfg, "./cert/rsa.pem")) {
+    //     printf("a_tls_cfg_set_cert rsa.pem error\n");
+    //     exit(-2);
+    // }
 
-#if OPENSSL_VERSION_NUMBER >= 0x10101003L
-    printf("Setting SM2 certificate\n");
-    /*Now Setting ENC param*/
-    if (!a_tls_cfg_set_key(cfg, "./cert/sm2.key")) {
-       printf("a_tls_cfg_set_key sm2.key error\n");
-       exit(-2);
-    }
+// #if OPENSSL_VERSION_NUMBER >= 0x10101003L
+//     printf("Setting SM2 certificate\n");
+//     /*Now Setting ENC param*/
+//     if (!a_tls_cfg_set_key(cfg, "./cert/sm2.key")) {
+//        printf("a_tls_cfg_set_key sm2.key error\n");
+//        exit(-2);
+//     }
 
-    if (!a_tls_cfg_set_cert(cfg, "./cert/sm2.pem")) {
-        printf("a_tls_cfg_set_cert sm2.pem error\n");
-        exit(-2);
-    }
+//     if (!a_tls_cfg_set_cert(cfg, "./cert/sm2.pem")) {
+//         printf("a_tls_cfg_set_cert sm2.pem error\n");
+//         exit(-2);
+//     }
 
-    /*Now Setting SIGN param*/
-    if (!a_tls_cfg_set_sign_key(cfg, "./cert/sm2.key")) {
-       printf("a_tls_cfg_set_key sm2.key error\n");
-       exit(-2);
-    }
+//     /*Now Setting SIGN param*/
+//     if (!a_tls_cfg_set_sign_key(cfg, "./cert/sm2.key")) {
+//        printf("a_tls_cfg_set_key sm2.key error\n");
+//        exit(-2);
+//     }
 
-    if (!a_tls_cfg_set_sign_cert(cfg, "./cert/sm2.pem")) {
-        printf("a_tls_cfg_set_cert sm2.pem error\n");
-        exit(-2);
-    }
-#else
-    printf("Warning: GM SSL is not supported\n");
-#endif
+//     if (!a_tls_cfg_set_sign_cert(cfg, "./cert/sm2.pem")) {
+//         printf("a_tls_cfg_set_cert sm2.pem error\n");
+//         exit(-2);
+//     }
+// #else
+//     printf("Warning: GM SSL is not supported\n");
+// #endif
 
     for (;;) {
         struct sockaddr_in client_addr;
@@ -111,7 +111,7 @@ int main(int argc, char **argv)
             exit(-2);
         }
         printf("process New client\n");
-        tls = a_tls_new(cfg);
+        tls = (a_tls_t *)a_tls_new(cfg);
         if (tls == NULL) {
             close(listen_fd);
             printf("a_tls_new error\n");
